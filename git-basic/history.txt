@@ -1,0 +1,73 @@
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB
+$ mkdir git-basic
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB
+$ cd git-basic
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic
+$ cat> first.txt
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic
+$ git init
+Initialized empty Git repository in C:/Users/MATRIX COMPUTER/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic/.git/
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic (master)
+$ git add first.txt
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic (master)
+$ git commit -m "adding first.txt"
+[master (root-commit) c3abf6d] adding first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.txt
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic (master)
+$ git log
+commit c3abf6d48d1875085b3323223a28df26a8a1b91e (HEAD -> master)
+Author: rain741 <rain74.dt@gmail.com>
+Date:   Sun Sep 19 23:38:16 2021 +0800
+
+    adding first.txt
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic (master)
+$ cat> second.txt
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic (master)
+$ git add second.txt
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic (master)
+$ git commit -m "adding second.txt"
+[master 37b8c8b] adding second.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 second.txt
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic (master)
+$ rm first.txt
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic (master)
+$ git add first.txt
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic (master)
+$ git commit -m "removing first.txt"
+[master 1d95fc1] removing first.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 first.txt
+
+MATRIX COMPUTER@Rain74 MINGW64 ~/Documents/SKILVUL/TUGAS GIT & GIT HUB/git-basic (master)
+$ git log
+commit 1d95fc177064388205aa8cd28ca9b45d61db80b8 (HEAD -> master)
+Author: rain741 <rain74.dt@gmail.com>
+Date:   Sun Sep 19 23:46:56 2021 +0800
+
+    removing first.txt
+
+commit 37b8c8b7e89f74968f8d483d1632fcbfda27c766
+Author: rain741 <rain74.dt@gmail.com>
+Date:   Sun Sep 19 23:42:10 2021 +0800
+
+    adding second.txt
+
+commit c3abf6d48d1875085b3323223a28df26a8a1b91e
+Author: rain741 <rain74.dt@gmail.com>
+Date:   Sun Sep 19 23:38:16 2021 +0800
+
+    adding first.txt
